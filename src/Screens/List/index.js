@@ -30,9 +30,14 @@ export const ListScreen = () => {
         </div>
         <div className="list-screen-list-container">
           {loading && <h3>Carregando...</h3>}
-          {
-            !loading && listData?.length > 0 ? listData.map(item => <ListCard key={item._id} item={item} />) : <h3>Sua lista está vazia, adicione um novo item clicando no botão de "ADICIONAR"!</h3>
-          }
+          {!loading && listData?.length > 0 ? (
+            listData.map((item) => <ListCard key={item._id} item={item} />)
+          ) : (
+            <h3>
+              Sua lista está vazia, adicione um novo item clicando no botão de
+              "ADICIONAR"!
+            </h3>
+          )}
         </div>
       </div>
     </div>
