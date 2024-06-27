@@ -15,6 +15,7 @@
 @font-face {
   font-family: "Avenir Next";
   src: url(/public/Fonts/AvenirNext-Medium.ttf);
+  font-weight: 500;
 }
 
 body {
@@ -41,4 +42,10 @@ h3 {
   font-weight: 500;
   margin: 0px;
   padding: 0px;
+}
+
+
+::-webkit-scrollbar {
+  visibility: hidden;
+  width: 0px;
 }
